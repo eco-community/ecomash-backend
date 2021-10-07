@@ -369,6 +369,7 @@ export interface LoginServerConfig {
 
 export interface AdminPlayersListItem {
   id: PlayerId;
+  pk: string;
   name: PlayerName;
   captures: number;
   isSpectate: boolean;

@@ -137,6 +137,7 @@ export default class WsEndpoint {
       while (player !== undefined) {
         list.push({
           id: player.id.current,
+          pk: player.user ? player.user.id : 'undefined',
           name: player.name.current,
           captures: player.captures.current,
           isSpectate: player.spectate.isActive,

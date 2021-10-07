@@ -137,6 +137,7 @@ export interface Player extends Entity {
   hitcircles?: HitCircles;
   horizon?: Horizon;
   id?: Id;
+  pk?: string;
   inferno?: Inferno;
   ip?: Ip;
   keystate?: Keystate;

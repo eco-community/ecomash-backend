@@ -1,6 +1,4 @@
-# ab-server
-
-Game server.
+# ECOMASH mod of AIRMASH (backend)
 
 Docs:
 

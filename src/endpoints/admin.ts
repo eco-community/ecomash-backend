@@ -49,6 +49,9 @@ const stringifyPlayers = fastJson({
       id: {
         type: 'number',
       },
+      pk: {
+        type: 'string',
+      },
       name: {
         type: 'string',
       },
