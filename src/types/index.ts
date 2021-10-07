@@ -370,6 +370,7 @@ export interface LoginServerConfig {
 export interface AdminPlayersListItem {
   id: PlayerId;
   pk: string;
+  earnings: number;
   name: PlayerName;
   captures: number;
   isSpectate: boolean;

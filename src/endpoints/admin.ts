@@ -52,6 +52,9 @@ const stringifyPlayers = fastJson({
       pk: {
         type: 'string',
       },
+      earnings: {
+        type: 'number',
+      },
       name: {
         type: 'string',
       },

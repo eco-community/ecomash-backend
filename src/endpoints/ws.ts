@@ -138,6 +138,9 @@ export default class WsEndpoint {
         list.push({
           id: player.id.current,
           pk: player.user ? player.user.id : 'undefined',
+          earnings: player.user
+            ? this.storage.users.list.get(player.user.id).lifetimestats.earnings
+            : 0,
           name: player.name.current,
           captures: player.captures.current,
           isSpectate: player.spectate.isActive,

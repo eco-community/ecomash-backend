@@ -138,6 +138,7 @@ export interface Player extends Entity {
   horizon?: Horizon;
   id?: Id;
   pk?: string;
+  earnings?: number;
   inferno?: Inferno;
   ip?: Ip;
   keystate?: Keystate;
