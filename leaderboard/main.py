@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 import aiohttp
 from fastapi import FastAPI
 from fastapi_utils.tasks import repeat_every
+from fastapi.middleware.cors import CORSMiddleware
 from tortoise.transactions import in_transaction
 from tortoise.contrib.fastapi import register_tortoise
 
@@ -16,6 +17,14 @@ from app.serializers import User_Pydantic
 
 app = FastAPI()
 db_lock = asyncio.Lock()
+origins = ["*"]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.on_event("startup")
