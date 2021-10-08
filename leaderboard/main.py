@@ -102,7 +102,7 @@ async def sync_users_data() -> None:
 
 @app.get("/users", response_model=List[User_Pydantic])
 async def get_users():
-    return await User_Pydantic.from_queryset(User.all().order_by("-score"))
+    return await User_Pydantic.from_queryset(User.all().order_by("-total_score"))
 
 
 register_tortoise(
