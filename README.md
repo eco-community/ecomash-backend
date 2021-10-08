@@ -2,6 +2,7 @@
 
 Docs:
 
+- [Leaderboard](https://github.com/eco-community/ecomash-backend/tree/master/leaderboard).
 - [In-game commands](./docs/commands.md).
 - [Environment variables](./docs/env-variables.md).
 - [JSON API](./docs/api.md).
