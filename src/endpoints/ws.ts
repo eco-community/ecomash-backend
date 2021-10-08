@@ -137,10 +137,17 @@ export default class WsEndpoint {
       while (player !== undefined) {
         list.push({
           id: player.id.current,
-          pk: player.user ? player.user.id : 'undefined',
+          // pk, earnings, totalkills, totaldeaths only available for logged in users
+          pk: player.user ? player.user.id : null,
           earnings: player.user
             ? this.storage.users.list.get(player.user.id).lifetimestats.earnings
-            : 0,
+            : null,
+          totalkills: player.user
+            ? this.storage.users.list.get(player.user.id).lifetimestats.totalkills
+            : null,
+          totaldeaths: player.user
+            ? this.storage.users.list.get(player.user.id).lifetimestats.totaldeaths
+            : null,
           name: player.name.current,
           captures: player.captures.current,
           isSpectate: player.spectate.isActive,

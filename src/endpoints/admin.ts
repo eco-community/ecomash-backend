@@ -55,6 +55,12 @@ const stringifyPlayers = fastJson({
       earnings: {
         type: 'number',
       },
+      totalkills: {
+        type: 'number',
+      },
+      totaldeaths: {
+        type: 'number',
+      },
       name: {
         type: 'string',
       },

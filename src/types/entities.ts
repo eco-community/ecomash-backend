@@ -139,6 +139,8 @@ export interface Player extends Entity {
   id?: Id;
   pk?: string;
   earnings?: number;
+  totalkills?: number;
+  totaldeaths?: number;
   inferno?: Inferno;
   ip?: Ip;
   keystate?: Keystate;

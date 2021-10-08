@@ -371,6 +371,8 @@ export interface AdminPlayersListItem {
   id: PlayerId;
   pk: string;
   earnings: number;
+  totalkills: number;
+  totaldeaths: number;
   name: PlayerName;
   captures: number;
   isSpectate: boolean;
